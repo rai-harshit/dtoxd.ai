@@ -105,7 +105,7 @@ li {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: none !important;
+    background-color: #3cabf2 !important;
 }
 
 
