@@ -1,1 +1,0 @@
-This folder contains detailed version of every bug found and reported by the team.
