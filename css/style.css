@@ -7,6 +7,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#gmap_canvas {
+	height: 100%;
+}
+
+@media only screen and (max-width: 768; max-width: 770px) {
+	#gmap_canvas {
+		height: 50%;
+	}
+}
 
 p {
     font-size: 13px;
