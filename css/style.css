@@ -10,10 +10,17 @@ body {
 #gmap_canvas {
 	height: 100%;
 }
+.video-overlay-close {
+	margin-top: 60px;
+}
 
-@media only screen and (max-width: 768; max-width: 770px) {
+@media only screen and (max-width: 766px), screen and (max-width: 770px) {
 	#gmap_canvas {
 		height: 50%;
+	}
+
+	.video-overlay-close {
+		margin-top: 160px
 	}
 }
 
