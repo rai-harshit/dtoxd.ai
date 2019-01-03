@@ -1,0 +1,55 @@
+runtime: php55
+api_version: 1
+
+handlers:
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
+  secure: always
+  redirect_http_response_code: 301
+
+# Serve php scripts.
+- url: /(.+\.php)$
+  script: \1
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /
+  script: index.html
+  secure: always
+  redirect_http_response_code: 301
+    
+
+- url: /css
+  static_dir: css
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /asset
+  static_dir: asset 
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /js
+  static_dir: js
+  secure: always
+  redirect_http_response_code: 301
+  
+- url: /mail
+  static_dir: mail
+  secure: always
+  redirect_http_response_code: 301
+
+- url: /images
+  static_dir: images
+  secure: always
+  redirect_http_response_code: 301
+  
+- url: /fonts
+  static_dir: fonts
+  secure: always
+  redirect_http_response_code: 301
+
+
