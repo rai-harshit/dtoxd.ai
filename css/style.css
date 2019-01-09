@@ -732,11 +732,12 @@ li {
 		font-size: 12px;
 	}
 	#main-slide .carousel-indicators{
-		display: none;
+		display: block;
 	}
 
     #main-slide .item .slider-content{
-		display: none;
+		margin-top: 10vh;
+		display: block;
 	}
 
     #main-slide .item {
@@ -749,7 +750,8 @@ li {
 @media (max-width : 479px) {
 
     #main-slide .item .slider-content{
-		display: none;
+		margin-top: 25vh;
+		display: block;
 	}
 
     #main-slide .item {
