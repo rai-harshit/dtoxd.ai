@@ -9,11 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home | DTOXD</title>
+    <title>DTOXD | Home</title>
 
 
     <!-- Bootstrap Core CSS -->
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -59,6 +67,12 @@
         .team-member{
             height: 20em;
         }
+        @media only screen and (max-width: 640px) {
+            .team-member{
+                height: 25em;
+                width: 27em;
+            }
+        }
         h3{
             font-size:40px!important;
         }
@@ -100,23 +114,23 @@
         #product-name:onclick{
             color:white;
         }
-
     </style>
     <!-- End of custom css -->
-
+    <!-- <style>
+        .mapouter{text-align:right;height:300px;width:100%;}
+        .gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}
+    </style> -->
 </head>
 
 <body class="index">
-
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" id="hide-on-vid">
-        <div class="container">
+        <div class="container" style="padding-top: 5px; padding-bottom: 5px;">
             <img src ="images/logo/dtoxd.png" height="50" width="50" align="left"> 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -443,8 +457,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-top:50px;padding-bottom: 50px">
-                <div class="col-md-12">
+            <div class="row" style="padding-top:10px;padding-bottom: 10px">
+                <div class="col-md-12 embed-responsive embed-responsive-16by9" style="padding-bottom: 120px;">
                     <a id="play-video" class="video-play-button" href="#">
                         <span></span>
                     </a>
@@ -703,7 +717,7 @@
                             </div>
 
                             <div class="team-member">
-                                <img src="images/team/vs.jpeg" class="img-responsive" alt="" style="height: 100%;">
+                                <img src="images/team/vs.jpeg" class="img-responsive" alt="" style="height: 120%;">
                                 <div class="team-details">
                                     <h4>VISHWAS SINGH</h4>
                                     <p>SOFTWARE DEVELOPER</p>
@@ -804,9 +818,8 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <section id="locate-us" class="s-google-map" style="padding-bottom: 15px;padding-top: 15px">
-                        <div class="mapouter">
-                            <div class="gmap_canvas"><iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Centre%20for%20Incubation%20and%20Business%20Acceleration%20CIBA%20Mumbai&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div>
-                            <style>.mapouter{text-align:right;height:300px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style>
+                        <div class="mapouter" style="height: 300px;">
+                            <div class="gmap_canvas" style="height: 300px;"><iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Centre%20for%20Incubation%20and%20Business%20Acceleration%20CIBA%20Mumbai&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div>
                         </div>
                     </section>
                 </div>
@@ -818,9 +831,6 @@
             <p>© Copyright 2019 - All Rights Reserved </p>
         </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- jQuery Version 2.1.1 -->
     <script src="js/jquery-2.1.1.min.js"></script>
