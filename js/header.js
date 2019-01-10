@@ -1,5 +1,6 @@
 $('#play-video').on('click', function (e) {
     e.preventDefault();
+    $('#hide-on-vid').css({"display": "none"});
     $('#video-overlay').addClass('open');
     $("#video-overlay").append('<iframe width="720px" height="480px" src="https://www.youtube.com/embed/rbixx0MxiuU?rel=0" frameborder="0" allowfullscreen></iframe>');
 });
@@ -17,4 +18,5 @@ $(document).keyup(function (e) {
 
 function close_video() {
     $('.video-overlay.open').removeClass('open').find('iframe').remove();
+    $('#hide-on-vid').css({"display": "block"});
 };

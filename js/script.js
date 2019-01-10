@@ -145,13 +145,13 @@ $(document).ready(function() {
 
   $(".our-team").owlCarousel({
         pagination: true,
-        slideSpeed : 2500,
+        slideSpeed : 25,
 		stopOnHover: true,
-    	autoPlay: 3000,
+    	autoPlay: 2000,
         items: 4,
-    	//singleItem:true,
+    	singleItem: false,
         itemsMobile : [550,1],
-        itemsDesktopSmall : [991,2],
+        itemsDesktopSmall : [991,3],
 		transitionStyle : "fade",
 		navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>']
   });

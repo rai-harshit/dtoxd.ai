@@ -114,6 +114,15 @@
         #product-name:onclick{
             color:white;
         }
+        @media only screen and (max-width: 640px) {
+            #desk-gif {
+                display: none;
+            }
+
+            #mob-gif {
+                display: block;
+            }
+        }
     </style>
     <!-- End of custom css -->
     <!-- <style>
@@ -187,7 +196,8 @@
             <!-- Carousel inner -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img class="img-responsive" id="mob-gif" src="images/back-animated.gif" alt="slider">
+                    <img class="img-responsive" id="desk-gif" src="images/back-animated.gif" alt="slider">
+                    <img class="img-responsive" id="mob-gif" src="images/mob-back.jpeg" alt="slider">
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
                             <h1 class="animated3">Introducing <span><strong>dtoxd</strong></span></h1>
@@ -793,8 +803,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <h5>Contact Us</h5>
                     <ul>
-                        <li><i class="material-icons">&#xe0be;</i>&nbsp;&nbsp;<a href="mailto:admin@dtoxd.ai" >dtoxd Admin</a></li>
-                        <li><i class="material-icons">&#xe0b0;</i>&nbsp;&nbsp;<a href="tel:+918452904404">+91-8452904404</a></li>
+                        <li><i class="material-icons">&#xe0be;</i>&nbsp;&nbsp;<a href="mailto:admin@dtoxd.ai" style="color: white;">dtoxd Admin</a></li>
+                        <li><i class="material-icons">&#xe0b0;</i>&nbsp;&nbsp;<a href="tel:+918452904404" style="color: white;">+91-8452904404</a></li>
                         <li><i class="material-icons">&#xe0c8;</i>&nbsp;CIBA, 6th Floor,<br>Agnel Technical Complex<br>Sector 9A, Vashi<br>Navi Mumbai - 400703</li>
                     </ul>
                     <div class="social-networks">
