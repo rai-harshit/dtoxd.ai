@@ -1,0 +1,87 @@
+body, html {
+	overflow-x: hidden;
+}
+
+#cr-inner {
+	height: 50vh;
+}
+
+#btitle {
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+#blog-title {
+	text-align: center;
+	font-size: 50px;
+}
+
+#st-jobs {
+	padding: 15px;
+	border: 3px solid black;
+	border-radius: 30px;
+}
+
+#blog-intro {
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#blog-cont {
+	font-family: 'Lora', serif;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+#dob-dod {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 640px) {
+	#cr-inner {
+		height: 50vh;
+	}
+	
+	#btitle {
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	
+	#mob-gif {
+		width: 400%;
+	}
+
+	#blog-intro {
+		font-family: 'Lobster', cursive;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	#st-jobs {
+		width: 100%;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	#blog-cont {
+		font-family: 'Lora', serif;
+		line-height: 1.5;
+		font-size: 15px;
+	}
+
+	#dob-dod {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#btitle {
+		text-transform: uppercase;
+		font-size: 60px;
+		line-height: 1.2;
+	}
+}
