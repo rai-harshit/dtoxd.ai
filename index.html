@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
@@ -123,11 +123,16 @@
             }
         }
     </style>
-    <!-- End of custom css -->
-    <!-- <style>
-        .mapouter{text-align:right;height:300px;width:100%;}
-        .gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}
-    </style> -->
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+          $('#hide-on-vid').css({"display": "block"});
+        }
+    </script>
 </head>
 
 <body class="index">
@@ -185,8 +190,6 @@
     </nav>
 
 
-
-
     <!-- Start Home Page Slider -->
     <section id="page-top">
         <!-- Carousel -->
@@ -196,7 +199,6 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img class="img-responsive" id="desk-gif" src="images/back-animated.gif" alt="slider">
-                    <img class="img-responsive" id="mob-gif" src="images/mob-back.jpeg" alt="slider">
                     <div class="slider-content">
                         <div class="col-md-12 text-center">
                             <h1 class="animated3">Introducing <span><strong>dtoxd</strong></span></h1>
