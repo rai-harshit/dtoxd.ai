@@ -1184,6 +1184,17 @@ and (min-width : 551px){
     font-family: 'Oswald', sans-serif;
 }
 
+/*----------------------------------------------------------*/
+/* Start NEWS Counter Section
+/*----------------------------------------------------------*/
+
+.news {
+	background-image: url(../images/newspaper2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
 
 
 /*-------------------------------------------------*/
