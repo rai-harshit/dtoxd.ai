@@ -1189,7 +1189,7 @@ and (min-width : 551px){
 /*----------------------------------------------------------*/
 
 .news {
-	background-image: url(../images/newspaper2.jpg);
+	background-image: url(../images/news/newspaper2.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding-top: 120px;
