@@ -1,0 +1,1 @@
+This folder contains the raw contents for the blog. 
